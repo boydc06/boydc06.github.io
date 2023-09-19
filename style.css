@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #614BC3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .logo img{ 
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    border-radius: 50%;
+}
+.header .logo img:hover{ 
+transform:scale(1.2)
+}
+.header .nav-links{ 
+    list-style: none;
+}
+.header .nav-links li{ 
+    display: inline-block;
+    padding: 0 20px;
+}
+.header .nav-links li:hover{
+    transform: scale(1.1);
+ }
+ .header .nav-links a{ 
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Tilt Prism';
+ }
+ .header .nav-links li a:hover{
+    color: #35A29F;
+ }
+ .header .btn button{
+    font-weight: 700;
+    color: #614BC3;
+    padding: 9px 25px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+ }
+.header .btn button:hover{
+background-color: white;
+color: blueviolet;
+transform: scale(1.1);
+}
+
+h2{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-family: 'Tilt Prism';
+    color: white;
+    background-color: #614BC3;
+    border-radius: 50px;
+    margin: 30px 350px;
+}
+
+.slider{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+.slider img{
+    width: 20%;
+    height: auto;
+}
+@keyframes cambio{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.nosotros{
+    color: white;
+    margin: 50px 50px; 
+    text-align: center;
+    border-top: 2px solid #614BC3;
+}
+.nosotros h5{
+    font-size: 50px;
+    font-family: 'Tilt Prism';
+    background-color: #614BC3;
+    border-radius: 50px;
+    margin: 30px 350px;
+}
+.nosotros p{
+    background-color: #614BC3;
+    padding: 15px;
+    border-radius: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: url(https://th.bing.com/th/id/R.4ae108ddbefdd54ca7a7882ffc5066d6?rik=LKODC%2bM0qYFQow&riu=http%3a%2f%2f2.bp.blogspot.com%2f-cP3Po1_gt8o%2fUz4VRjo8uVI%2fAAAAAAAAEfY%2f2BsfWP4Yi5A%2fs1600%2fgrecia%2bclasica%2bestudiantes.jpg&ehk=cNxhp3u9ZQxA6vuQUKUmVBj8YJyIIMHlTcJ%2bI3brcN8%3d&risl=&pid=ImgRaw&r=0);
+}
+
+
+.obra img{
+    max-width: 100%;
+}
+.container-obras{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.obra{
+    border-radius: 10px;
+    background-color: #C8FFE0;
+}
+.obra:hover{
+    box-shadow: 0 10px 20px  rgba(0, 0, 0, 0.20);
+}
+.obra img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+.obra figure{
+    overflow: hidden;
+}
+.obra:hover img{
+    transform: scale(1.2);
+}
+.info-obra{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.descripcion{
+    font-size: 14px;
+    font-weight: 900;
+    font-family: 'Barlow Condensed';
+}
+.info-obra a{
+    text-decoration: none;
+    text-align: center;
+    background: none;
+    background-color:#614BC3;
+    color: white;
+    padding: 10px 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Tektur';
+}
+.info-obra h3{
+    font-family: 'Tektur';
+}
+
+.titulo-footer{
+    color: white;
+    text-align: center;
+    background-color: #614BC3;
+    padding: 12px 0px;
+    margin-top: 40px;
+    font-family: 'Tektur';
+}
+.redes-footer{
+text-align: center;
+color: white;
+background-color: #35155D;
+padding: 12px 0px;
+font-family: 'Tektur';
+}
+.redes-footer li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.redes-footer a{
+    text-decoration: none;
+    color: white;
+}
